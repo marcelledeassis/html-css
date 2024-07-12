@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(99, 140, 221);
+
+        }
+
+         header {
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 20px;
+         }
+
+         nav {
+            background-color: rgb(105, 163, 173);
+            padding: 3px;
+            border-radius: 10px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.39);
+
+         }
+         nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 100px;
+
+         }
+
+         main {
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 0px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.384);
+
+         }
+
+          video {
+            display: flex;
+            justify-content: center;
+            
+         }
+
+         article {
+            color: black;
+           
+         }
+
+         article > aside {
+            background-color: rgb(255, 255, 255);
+            
+         }
+
+         footer {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+            
+         }
+
+         footer > p {
+            margin: 0px;
+         }
+         div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+         }
+
+    </style>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <p>Tudo aquilo que você sempre quis saber o mundo Tech, em um único lugar.</p>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti natus ducimus eius earum quod debitis maxime hic tenetur sed laborum quas, fugit, dolore cum sapiente laudantium molestiae neque incidunt. Eaque?</p>
+                <video width="560" controls>
+                    <source src="midias/meu-video.mp4" type="video/mp4">
+                    <source src="midias/meu-video.webm" type="video/webm">
+                </video>
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ex, quo consequatur tempora asperiores adipisci, voluptas quae vel illo quaerat libero quibusdam nihil aut eaque? Minus nulla non ducimus culpa.
+                </p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por CursoemVideo</p>
+    </footer>
+    <div id="bola"></div>
+
+    
+</body>
+</html>
