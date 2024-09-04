@@ -1,14 +1,25 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap');
+
+:root {
+    /*CONFIGURAÇÃO GERAL PARA VARIÁVEIS*/
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: "Rowdies", sans-serif;
+    --fonte3: "Skranji", system-ui;
+}
+
 * {
     /*REGRA DE CONFIGURAÇÃO GERAL PARA RESETAR TODOS OS ELEMENTOS.*/
     margin: 0px;
     padding: 0px;
 }
 
-html,
-body {
+html,body {
     /*CONFIGURAÇÕES EM COMUM. ATENÇÃO A ALTURA DA VIEWPORT (vw) E VIEWHEIGHT (vh).*/
+    font-family: var(--fonte1);
     min-height: 100vh;
     background-color: darkgray;
 }
@@ -20,32 +31,31 @@ header {
     text-align: center;
 }
 
-header>h1 {
+header > h1 {
     /*DICA: 
     PARA LETRAS EM MAIÚSCULA EXISTE A TÉCNICA text-transform: uppercase; - PORÉM, NÃO É BONITO.
-
     RECOMENDAÇÃO: font-variant: small-caps; 
     DÁ O MESMO EFEITO DE LETRAS MAIÚSCULAS, PORÉM, COM AS INICIAIS MAIORES.
     */
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 3em;    
 }
 
-header>p {
+header > p {
     /*VALOR PARA SIMETRIA COM O PADDING TOP*/
     padding-bottom: 50px;
 
 }
 
-header a,
-footer a {
+header a, footer a {
     color: white;
     text-decoration: none;
     font-weight: bolder;
 }
 
-header a:hover,
-footer a:hover {
+header a:hover, footer a:hover {
     /*(header a:hover, footer a:hover): TÉCNICA SIMPLIFICADA PELO PROFESSOR.
     NÃO FEZ DIFERENÇA SIGNIFICATIVA NO RESULTADO FINAL DESTE PROJETO, PORÉM, PODE SER UTILIZADO POSTERIOMENTE EM OUTROS.*/
     text-decoration: underline;
@@ -67,6 +77,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em; /*espaçamento entre as linhas */
     padding-left: 30px; /*espaçamento lateral*/
+    font-family: var(--fonte3);
+    font-size: 1.3em;
 }
 
 section.imagem {
@@ -75,7 +87,8 @@ section.imagem {
 }
 
 section.imagem > p {
-    width: 400px;
+    display: inline-block; /*caixa para adaptar ao longo do content*/
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.247);
     /*CAIXA CRIADA PARA QUE O TEXTO NÃO MESCLE COM A IMAGEM INSERIDA*/
 }
