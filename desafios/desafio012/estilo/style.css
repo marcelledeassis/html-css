@@ -4,97 +4,77 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap');
 
-:root {
-    /*CONFIGURAÇÃO GERAL PARA VARIÁVEIS*/
+:root { /*configuração geral para variáveis*/
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2: "Rowdies", sans-serif;
     --fonte3: "Skranji", system-ui;
 }
 
-* {
-    /*REGRA DE CONFIGURAÇÃO GERAL PARA RESETAR TODOS OS ELEMENTOS.*/
+* { /*regra/seletor universal para resetar todos os elementos.*/
     margin: 0px;
     padding: 0px;
 }
 
-html,body {
-    /*CONFIGURAÇÕES EM COMUM. ATENÇÃO A ALTURA DA VIEWPORT (vw) E VIEWHEIGHT (vh).*/
+html,body { /*CONFIGURAÇÕES EM COMUM. ATENÇÃO A ALTURA DA VIEWPORT (vw) E VIEWHEIGHT (vh).*/
     font-family: var(--fonte1);
     min-height: 100vh;
     background-color: darkgray;
 }
 
-header {
-    /*CONFIGURAÇÃO GERAL DO CABEÇALHO*/
+header { /*configuração geral do cabeçalho*/
     color: white;
     background-color: black;
     text-align: center;
 }
 
-header > h1 {
-    /*DICA: 
-    PARA LETRAS EM MAIÚSCULA EXISTE A TÉCNICA text-transform: uppercase; - PORÉM, NÃO É BONITO.
-    RECOMENDAÇÃO: font-variant: small-caps; 
-    DÁ O MESMO EFEITO DE LETRAS MAIÚSCULAS, PORÉM, COM AS INICIAIS MAIORES.
-    */
+header > h1 { /*DICA! para letras maiúsculas: text-transform: uppercase; - PORÉM, NÃO É BONITO.*/
     padding-top: 50px;
-    font-variant: small-caps;
+    font-variant: small-caps; /*dá o mesmo feito do text-transform, porém com ênfase nas iniciais.*/
     font-family: var(--fonte2);
-    font-size: 3em;    
+    font-size: 3em; /* também pode-se usar a altura da vw ex: 10vw;*/   
 }
 
-header > p {
-    /*VALOR PARA SIMETRIA COM O PADDING TOP*/
-    padding-bottom: 50px;
+header > p { 
+    padding-bottom: 50px; /*valor para simetria com padding-top do h1.*/
 
 }
 
-header a, footer a {
+header a, footer a { /*configuração geral dos links de header e footer.*/
     color: white;
     text-decoration: none;
     font-weight: bolder;
 }
 
-header a:hover, footer a:hover {
-    /*(header a:hover, footer a:hover): TÉCNICA SIMPLIFICADA PELO PROFESSOR.
-    NÃO FEZ DIFERENÇA SIGNIFICATIVA NO RESULTADO FINAL DESTE PROJETO, PORÉM, PODE SER UTILIZADO POSTERIOMENTE EM OUTROS.*/
+header a:hover, footer a:hover { /*técnica simplificada para configurações específica dos links*/
     text-decoration: underline;
 }
 
-section.normal {
-    /*
-    LEMBRE-SE!
-    AS CONFIGURAÇÕES DAS CLASSES SÃO FEITAS DA FORMA ACIMA:
-    O ELEMENTO VEM PRIMEIRO E DEPOIS O "." E O NOME DA CLASS A PARTIR DO PONTO
-    */
+section.normal { /* lembre-se de colocar o "." e o nome da class APÓS o elemento*/
     background-color: white;
     color: black;
 }
 
-section {
-    /* EFEITO PARALAX: NA SECTION GERAL, CONFIGURE O PADDING TOP E BOTTOM (ESPAÇAMENTO DA ALTURA NA VIEWHEIGTH).*/
-    padding-top: 10vh;
+section { /* EFEITO PARALAX: na SECTION geral, padding top e bottom para ESPAÇAMENTO DA ALTURA NA VIEWHEIGTH.*/
+    padding-top: 10vh; 
     padding-bottom: 10vh;
     line-height: 2em; /*espaçamento entre as linhas */
     padding-left: 30px; /*espaçamento lateral*/
     font-family: var(--fonte3);
-    font-size: 1.3em;
+    font-size: 1.3em; /*tamanho da fonte*/
 }
 
-section.imagem {
+section.imagem { /*configuração geral para background e cor da fonte.*/
     background-color: rgb(36, 34, 34);
     color: white;
 }
 
-section.imagem > p {
-    display: inline-block; /*caixa para adaptar ao longo do content*/
+section.imagem > p { /*caixa criada para que o texto não mescle com a imagem inserida*/
+    display: inline-block; /*caixa para adaptar ao longo do conteúdo*/
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.247);
-    /*CAIXA CRIADA PARA QUE O TEXTO NÃO MESCLE COM A IMAGEM INSERIDA*/
+    background-color: rgba(0, 0, 0, 0.247); /*cor de fundo da caixa*/
 }
 
-footer {
-    /*CONFIGURAÇÃO GERAL DO RODAPÉ*/
+footer { /*configuração geral do rodapé*/
     color: white;
     background-color: black;
     text-align: center;
