@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+* {
+    /*REGRA DE CONFIGURAÇÃO GERAL PARA RESETAR TODOS OS ELEMENTOS.*/
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+    /*CONFIGURAÇÕES EM COMUM. ATENÇÃO A ALTURA DA VIEWPORT (vw) E VIEWHEIGHT (vh).*/
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header {
+    /*CONFIGURAÇÃO GERAL DO CABEÇALHO*/
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+header>h1 {
+    /*DICA: 
+    PARA LETRAS EM MAIÚSCULA EXISTE A TÉCNICA text-transform: uppercase; - PORÉM, NÃO É BONITO.
+
+    RECOMENDAÇÃO: font-variant: small-caps; 
+    DÁ O MESMO EFEITO DE LETRAS MAIÚSCULAS, PORÉM, COM AS INICIAIS MAIORES.
+    */
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header>p {
+    /*VALOR PARA SIMETRIA COM O PADDING TOP*/
+    padding-bottom: 50px;
+
+}
+
+header a,
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover,
+footer a:hover {
+    /*(header a:hover, footer a:hover): TÉCNICA SIMPLIFICADA PELO PROFESSOR.
+    NÃO FEZ DIFERENÇA SIGNIFICATIVA NO RESULTADO FINAL DESTE PROJETO, PORÉM, PODE SER UTILIZADO POSTERIOMENTE EM OUTROS.*/
+    text-decoration: underline;
+}
+
+section.normal {
+    /*
+    LEMBRE-SE!
+    AS CONFIGURAÇÕES DAS CLASSES SÃO FEITAS DA FORMA ACIMA:
+    O ELEMENTO VEM PRIMEIRO E DEPOIS O "." E O NOME DA CLASS A PARTIR DO PONTO
+    */
+    background-color: white;
+    color: black;
+}
+
+section {
+    /* EFEITO PARALAX: NA SECTION GERAL, CONFIGURE O PADDING TOP E BOTTOM (ESPAÇAMENTO DA ALTURA NA VIEWHEIGTH).*/
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em; /*espaçamento entre as linhas */
+    padding-left: 30px; /*espaçamento lateral*/
+}
+
+section.imagem {
+    background-color: rgb(36, 34, 34);
+    color: white;
+}
+
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.247);
+    /*CAIXA CRIADA PARA QUE O TEXTO NÃO MESCLE COM A IMAGEM INSERIDA*/
+}
+
+footer {
+    /*CONFIGURAÇÃO GERAL DO RODAPÉ*/
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
