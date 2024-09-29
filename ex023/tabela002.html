@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        td, th { /*virgula para fazer a mesma config. em ambas as tags*/
+            border: 1px solid black;
+            padding: 10px;
+       }
+
+       thead, tfoot { /*config. para a cabeça e rodapé*/
+        background-color: rgb(209, 157, 157);
+        color: white;
+       }
+
+       td.num { /*config. da classe*/
+        text-align: right;
+       }
+       
+
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!-- 
+        ANATOMINA PARA TABELAS GRANDES
+        TABLE
+            THEAD = CABEÇA DA TABELA
+                TR , TD, TH
+            TBODY = CORPO DA TABELA
+                TR,TD, TH
+            TFOOT = RODAPÉ DA TABELA
+                TH, TD, TH
+        BASICAMENTE NÃO PRECISAMOS TER A CABEÇA OU O RODAPÉ DA TABELA, PODEMOS TER APENAS O CORPO. 
+
+    -->
+
+    <table>
+        <thead> <!--cabeça-->
+            <tr> <!--linha da tabela-->
+                <th> Estado</th> 
+                <th>População</th> 
+            </tr>
+        </thead>
+        
+        <tfoot><!-- 
+            A Semântica do HTML5, entende que colocando a tag "tfoot" no ínicio após o "thead" ou no final do código (rodapé), a posição na visualização será a mesma. O navegador entende que a cabeça é em cima, corpo no meio e o pé é embaixo. 
+        -->
+            <tr>
+                <th>Total de Habitantes</th>
+                <td class="num"><strong>210.147.125</strong></td>
+            </tr>
+        </tfoot>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.973.190</td> <!--usar a classe "num" ao definir número-->
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.322.692</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.219.679</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.850.513</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.824.665</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.229.915</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.539.029</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.233.656</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.664.306</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">4.102.129</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3.836.399</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3.446.071</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3.375.646</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3.220.104</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">2.982.815</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2.901.895</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2.291.077</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1.746.227</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1.577.342</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">880.631</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">802.837</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">716.793</td>
+            </tr>
+        </tbody>
+    </table>
+   
+    <!--
+    OBS:
+        O W3C recomenda a autilização das tags: thead, tbody e tfoot, apenas em tabelas grandes e complexas, porém, o uso dessas tags em qualquer tamanho de tabela é recomendado.
+    
+    DICA:
+        É recomendável a definição de um escopo dos th(cabeçalho).
+    -->
+</body>
+</html>
+
