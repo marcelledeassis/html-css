@@ -20,13 +20,21 @@
             padding: 10px;
        }
 
-       thead, tfoot { /*config. para a cabeça e rodapé*/
-        background-color: rgb(209, 157, 157);
-        color: white;
+        caption {
+            font-size: 1em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(250, 214, 219);
+
+        }
+
+            thead, tfoot { /*config. para a cabeça e rodapé*/
+            background-color: rgb(209, 157, 157);
+            color: white;
        }
 
-       td.num { /*config. da classe*/
-        text-align: right;
+        td.num { /*config. da classe*/
+             text-align: right;
        }
        
 
@@ -37,6 +45,7 @@
     <!-- 
         ANATOMINA PARA TABELAS GRANDES
         TABLE
+            CAPTION = LEGENDA DA TABELA (não utilizar "tr" ou "td")
             THEAD = CABEÇA DA TABELA
                 TR , TD, TH
             TBODY = CORPO DA TABELA
@@ -48,10 +57,11 @@
     -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead> <!--cabeça-->
             <tr> <!--linha da tabela-->
-                <th> Estado</th> 
-                <th>População</th> 
+                <th scope="col"> Estado</th> 
+                <th scope="col" style="width: 50px;">População</th> 
             </tr>
         </thead>
         
@@ -59,7 +69,7 @@
             A Semântica do HTML5, entende que colocando a tag "tfoot" no ínicio após o "thead" ou no final do código (rodapé), a posição na visualização será a mesma. O navegador entende que a cabeça é em cima, corpo no meio e o pé é embaixo. 
         -->
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
