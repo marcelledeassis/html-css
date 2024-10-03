@@ -28,9 +28,25 @@
 
         }
 
-            thead, tfoot { /*config. para a cabeça e rodapé*/
+        thead, tfoot { /*config. para a cabeça e rodapé*/
             background-color: rgb(209, 157, 157);
             color: white;
+       }
+           /*
+            USAR PSEUDO-CLASSE  :nth-child() 
+            -Para linhas pares usar (even) ou (2n);
+            -Para linhas ímpares usar (odd) ou (2n-1).
+            EX: 
+            tbody > tr:nth-child(odd){ 
+             background-color: white; (opcional quando fundo já for branco)
+            }
+            tbody > tr:nth-child(even){ 
+             background-color: lightgray; 
+            }
+        */
+       tbody > tr:nth-child(even){ 
+            background-color: rgb(224, 174, 182);
+     
        }
 
         td.num { /*config. da classe*/
