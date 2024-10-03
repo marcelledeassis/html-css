@@ -11,8 +11,8 @@
 
         table {
             width: 500px;
-            border: 1px solid black;
             border-collapse: collapse;
+            position: relative; /*config. comportamental*/
         }
 
         td, th { /*virgula para fazer a mesma config. em ambas as tags*/
@@ -32,6 +32,12 @@
             background-color: rgb(209, 157, 157);
             color: white;
        }
+
+        thead {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(209, 157, 157);
+        }
            /*
             USAR PSEUDO-CLASSE  :nth-child() 
             -Para linhas pares usar (even) ou (2n);
@@ -52,7 +58,6 @@
         td.num { /*config. da classe*/
              text-align: right;
        }
-       
 
     </style>
 </head>
@@ -181,7 +186,10 @@
             </tr>
         </tbody>
     </table>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id perferendis quidem architecto, quisquam nostrum praesentium hic, molestiae rerum corporis qui nobis natus obcaecati molestias sunt. Odit nam est beatae commodi fuga adipisci quibusdam voluptatum, totam deserunt minima inventore non sint, cumque quo explicabo, atque exercitationem consequatur harum officiis quis! Quibusdam optio porro sed nemo dolorum architecto fugit vero! Possimus, accusamus reiciendis praesentium obcaecati numquam consequatur alias. Distinctio, velit similique ratione earum molestias culpa, ducimus natus rem omnis iste perferendis facilis aliquam illum optio fugiat quas! Vero eaque placeat cum in alias, numquam incidunt repellat facilis libero harum praesentium quod voluptatem blanditiis quis culpa repudiandae mollitia est odit optio maxime atque beatae consectetur dolore? Quam eveniet modi fugiat blanditiis voluptatibus molestias reprehenderit dolores doloremque iusto, perspiciatis rem vel, unde non aut. Illo dolor quo, facere veritatis asperiores distinctio! Blanditiis aliquid voluptates natus facilis quod officiis, nemo, quisquam hic earum vero, corrupti adipisci deserunt reiciendis explicabo sint minus? Sunt, laboriosam? Similique culpa debitis architecto est, non distinctio quasi provident. Libero, incidunt enim reprehenderit animi maiores error eius, labore itaque quos dolore ducimus ab at consequatur rem earum? A voluptatibus explicabo excepturi voluptates corporis? Dignissimos suscipit laudantium reiciendis quasi? Eaque deleniti, animi cupiditate distinctio labore aliquam, quasi provident exercitationem ab consectetur sint dicta dolorem facilis in obcaecati veritatis quod voluptatibus quibusdam quo natus quas tempore rerum excepturi adipisci? Quas dolore deleniti totam esse saepe voluptas omnis tempora? Eaque fugit, nulla pariatur libero facere asperiores debitis, magni nesciunt suscipit sequi qui eos a repellendus cumque iusto voluptates, ipsa deleniti tempore? At, asperiores temporibus aliquid assumenda optio cum cumque eius odit aut ipsum id ullam reprehenderit consequatur aperiam quidem dolorum earum accusamus aliquam. Nemo magnam in voluptate autem, nisi unde eius tenetur explicabo officia fugiat illo obcaecati a voluptatem earum quibusdam, natus sit animi et deleniti repudiandae voluptatibus nobis? Inventore magni totam repellat deleniti excepturi temporibus possimus corrupti, iure sequi voluptate adipisci? Error illo necessitatibus, nostrum provident veritatis dolor laboriosam animi aliquid voluptate ipsa? Eius recusandae dolores adipisci, consectetur pariatur doloremque error culpa distinctio iusto vel fugiat enim incidunt modi consequuntur impedit dolor voluptas aliquam saepe ullam est officia quidem accusamus! Enim, vero. Harum excepturi veritatis cupiditate accusamus esse maiores natus obcaecati, est ut sint ea explicabo unde dignissimos dolorem nobis temporibus inventore quas. Vel rem earum, laudantium quos optio, assumenda consequatur nostrum quas asperiores illum quaerat atque magni nam consectetur aspernatur sequi repellat. Ducimus impedit aspernatur architecto doloremque quasi delectus ea distinctio. Harum voluptate impedit repellat, perspiciatis maiores commodi ratione maxime aperiam. Explicabo culpa quos vel praesentium velit excepturi quasi officiis et quia, iure, nostrum consectetur nesciunt voluptas est provident illo? Optio veniam asperiores numquam cum quis iusto inventore amet aspernatur fugiat. Sed neque sit, officiis corporis eos dolore, dolorem quis sequi temporibus ipsa placeat quod est in cum. Dolorum enim necessitatibus labore repellendus iusto assumenda dolore, illo libero, deleniti perspiciatis soluta aliquid incidunt laboriosam totam nihil deserunt sequi quod itaque! Qui, atque ab? Repudiandae commodi tempora laboriosam dolorum omnis excepturi ratione quae assumenda.</p>
    
+ 
     <!--
     OBS:
         O W3C recomenda a autilização das tags: thead, tbody e tfoot, apenas em tabelas grandes e complexas, porém, o uso dessas tags em qualquer tamanho de tabela é recomendado.
