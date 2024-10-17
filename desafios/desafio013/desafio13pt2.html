@@ -23,27 +23,47 @@
         th, td {
             border: 1px solid black;
             padding: 10px;
+            text-align: center;
 
         }
+        thead {
+            background-color: rgb(136,135,135);
+            color: white;
+            font-size: large;
+        }
+
+        .medias{
+            background-color:  rgb(136,135,135);
+            color: white;
+            font-size: large;
+        }
+
+        .m1, .m2 {
+            background-color:  rgb(136,135,135);
+            color: white;
+            font-size: large;
+        }
+        
     </style>
 </head>
 <body>
-    <h1>Notas</h1>
     <table>
         <caption>Boletim Escolar</caption>
         <thead>
             <tr>
-                <th>Área</th>
-                <th>Disciplinas</th>
-                <th>Notas</th>
-                <td>Nota 1</td>
-                <td>Nota 2</td>
-                <th>Média</th>
+                <th scope="rowgroup" rowspan="2">Área</th>
+                <th scope="rowgroup" rowspan="2">Disciplinas</th>
+                <th scope="colgroup" colspan="2">Notas</th>
+                <th scope="rowgroup" rowspan="2">Média</th>
+            </tr>
+            <tr> <!--SELETOR PARA A QUEBRA/DIVISÃO ABAIXO DE UMA MESMA CÉLULA DENTRO DO CABEÇALHO-->
+                <th scope="row">Nota 1</th>
+                <th scope="row">Nota 2</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th rowspan="4">Exatas</th>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
                 <td>Matemática</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -69,14 +89,25 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <th colspan="4">Média de Exatas</th>
+                <th colspan="4" class="medias">Média de Exatas</th>
+                <td class="m1">0.0</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
+                <td>História</td>
+                <td>0.0</td>
+                <td>0.0</td>
                 <td>0.0</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th colspan="4" class="medias">Média de Exatas</th>
+                <td class="m2">0.0</td>
             </tr>
         </tbody>
     </table>
